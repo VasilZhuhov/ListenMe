@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="./styles/form.css">
+    </head>
+    <body>
+        <header>
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">ListenME <i class="fas fa-globe"></i></a>
+              </button>
+              <div class="navbar" id="navbarNav">
+                <ul class="navbar-nav">
+                </ul>
+              </div>
+            </nav>
+        </header>
+        <div class="login-form">
+            <h1>Register</h1>
+            <form action="register" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit">
+            </form>
+            <%= error %>
+        </div>
+    </body>
+</html>
